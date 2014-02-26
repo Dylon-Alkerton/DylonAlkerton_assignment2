@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'duru_sans';
+    src: url('../fonts/durusans-regular-webfont.eot');
+    src: url('../fonts/durusans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/durusans-regular-webfont.woff') format('woff'),
+         url('../fonts/durusans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/durusans-regular-webfont.svg#duru_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'krona_one';
+    src: url('../fonts/kronaone-regular-webfont.eot');
+    src: url('../fonts/kronaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kronaone-regular-webfont.woff') format('woff'),
+         url('../fonts/kronaone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/kronaone-regular-webfont.svg#krona_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fontMixin(){
+	font-family: 'duru_sans',arial,sans-serif;
+	color: #fafafa;
+}
+.fontMixin2(){
+	font-family: 'krona_one',helvetica,sans-serif;
+	color: #fafafa;
+}
+
+
+.wrapper{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.intro{
+	width: 1280px;
+	background: url(../images/headerBackground.png);
+	background-size:1280px 721px;
+	background-repeat:no-repeat;
+	float: left;
+	header{
+		background-color: rgba( 2, 2, 2 ,0.302);
+		img{
+			margin: 25px 0 0 125px;
+			width:255px;
+			padding-bottom: 25px;
+		}
+		nav{
+			display: inline-block;
+			float: right;
+			margin-right:85px;
+			margin-top:60px;
+			ul{
+				li{
+					display: inline-block;
+					font-size: 18px;
+					margin-left: 50px;
+					.fontMixin2();
+					a{
+						text-decoration: none;
+						color: #fafafa;
+						&:hover{
+							color:#5dcdb5;
+						}
+					}
+				}
+			}
+		}
+	}
+	.banner{
+		clear: both;
+		width: 1280px;
+		img{
+			float: left;
+			margin: 45px 0 0 192px;
+		}
+		.caption{
+			float: right;
+			margin: 235px 245px 0 0;
+			h3{
+				.fontMixin2();
+				text-align: center;
+				line-height: 20px;
+			}
+		}
+	}
+	padding-bottom: 10px;
+}
+.about{
+	overflow: hidden;
+	clear: both;
+	padding-top: 100px;
+	h2{
+		text-align: center;
+		margin-top: 100px;
+		font-family: 'krona_one';
+		font-size: 36px;
+		color: #5dcdb5;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+	}
+	.left{
+		float: left;
+		width: 757px;
+		padding-right: 28px;
+	}
+	.right{
+		width: 400px;
+		margin-top: -50px;
+		float: left;
+		padding-bottom: 80px;
+	}
+
+	p{
+		margin-left: 108px;
+		font-family: 'duru_sans',arial,serif;
+		font-size:18px;
+		margin-bottom: 36px;
+	}
+	h6{
+		margin-top:11px;
+		margin-left: 108px;
+		font-family: 'krona_one';
+		font-size: 24px;
+		span{
+			margin-top: 23px;
+			display: block;
+			font-family: 'krona_one';
+			font-size: 18px;
+		}
+	}
+	img{
+		margin-top: 47px;
+	}
+}
+
+.menu{
+	background: url(../images/menuBackground.png);
+	background-size: 1280px 471px;
+	width: 1280px;
+	height: 471px;
+	h2{
+		text-align: center;
+		color:#f95971;
+		font-size:36px;
+		font-family: 'krona_one';
+		text-transform: uppercase;
+		padding-top: 80px;
+		padding-bottom: 55px;
+	}
+	.type{
+		h3{
+			font-family: 'krona_one';
+			color: #fafafa;
+			font-size: 24px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		display: inline-block;
+		width: 422px;
+		text-align: center;
+		ul{
+			list-style-type: none;
+			li{
+				font-family: 'duru_sans';
+				font-size: 18px;
+				color: #242424;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+footer{
+	clear: both;
+	background-color:#252525;
+	padding-bottom: 85px;
+	overflow: hidden;
+	*{
+		color: #fafafa;
+	}
+	.left2{
+		float: left;
+		width: 384px;
+		h5{
+			margin-left: 86px;
+			padding-top: 50px;
+			font-family: 'krona_one';
+			font-size: 24px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+
+		}
+		ul{
+			margin-left: 86px;
+			list-style-type: none;
+			li{
+				font-size: 18px;
+				font-family: 'duru_sans';
+				color: #fafafa;
+				margin-bottom: 15px;
+				&:last-child{
+					margin-top:35px;
+				}
+			}
+		}
+	}
+	.right2{
+		margin-top: 60px;
+		margin-right: 105px;
+		float: right;
+		text-align: right;
+		h6{
+			font-size: 18px;
+			font-family: 'duru_sans';
+			color: #fafafa;
+		}
+	}
+}
